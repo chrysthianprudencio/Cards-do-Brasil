@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    /* border: 1px solid green ; */
+}
+
+h1 {
+
+    text-align: center;
+    margin-block: 5px;
+}
+
+body {
+
+    background: #0f2b05;
+    color: #fff;
+}
+
+.cards {
+
+    max-width: 1200px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 30px;
+    column-gap: 10px;
+}
+
+.card {
+
+   /*  margin: 10px; */
+    right: -10px;
+    width: 200px;
+    height: 298px;
+    position: relative;
+    background: #f4d400;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.posicaoP, .nomeJogador, .numero {
+
+    font-size: 30px;
+    color: #544592;
+}
+
+.nomeJogador {
+
+    position: absolute;
+    bottom: 30px;
+}
+
+.numero {
+
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+
+.posicaoG {
+
+    font-size: 90px;
+    color: #F9E97F;
+}
+
+.escudo {
+
+    height: 58px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.jogador {
+
+    z-index: 2;
+}
+
+.posicaoP {
+
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 40px;
+    left: 0;
+    z-index: 1;
+    line-height: 100%;
+    display: inline-block;
+}
+
+.posicaoG {
+
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 100px;
+    right: 10px;
+    z-index: 0;
+    line-height: 100%;
+    display: inline-block;
+    width: 288px;
+    text-align: center;
+}
+
+footer {
+
+    text-align: center;
+    margin-bottom: 10px;
+}
+
