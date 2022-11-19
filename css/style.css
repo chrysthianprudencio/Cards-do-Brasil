@@ -5,13 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Bebas Neue', sans-serif;
-    /* border: 1px solid green ; */
 }
 
 h1 {
 
     text-align: center;
-    margin-block: 5px;
+    margin-block: 10px;
 }
 
 body {
@@ -24,16 +23,16 @@ body {
 
     max-width: 1200px;
     margin-inline: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    row-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: center;
+    flex: 1 1 200px;
     column-gap: 10px;
 }
 
 .card {
 
-   /*  margin: 10px; */
-    right: -10px;
     width: 200px;
     height: 298px;
     position: relative;
@@ -43,7 +42,6 @@ body {
     align-items: center;
     justify-content: center;
 
-   
 }
 
 .posicaoP, .nomeJogador, .numero {
@@ -111,6 +109,6 @@ body {
 footer {
 
     text-align: center;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
